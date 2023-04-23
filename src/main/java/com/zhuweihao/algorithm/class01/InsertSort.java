@@ -54,6 +54,7 @@ public class InsertSort {
     }
 
     public static int[] generateRandomArray(int maxSize, int maxValue) {
+        //Math.random()等概率返回[0,1)上的一个小数
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
