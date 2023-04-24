@@ -6,6 +6,13 @@ package com.zhuweihao.algorithm.class01;
  * @Description com.zhuweihao.algorithm.class01
  */
 public class BSExist {
+    /**
+     * 二分法判定有序数组sortedArr中是否存在num
+     *
+     * @param sortedArr
+     * @param num
+     * @return
+     */
     public static boolean exist(int[] sortedArr, int num) {
         if (sortedArr == null || sortedArr.length == 0) {
             return false;
@@ -14,6 +21,12 @@ public class BSExist {
         int right = sortedArr.length - 1;
         int mid = 0;
         while (left < right) {
+            /*
+            mid = (left + right) / 2
+            mid = left + (right -left) / 2
+            mid = left + ((right - left)>>1)
+            除以二就相当于向右移位1，乘以2相当于向左移位1，加以相当于 | 1
+             */
             mid = left + ((right - left) >> 1);
             if (sortedArr[mid] == num) {
                 return true;
@@ -27,7 +40,7 @@ public class BSExist {
     }
 
     public static void main(String[] args) {
-        int[] arr=new int[]{0,1,2,3,4,5,6,7,8,9,10};
-        System.out.println(exist(arr,11));
+        int[] arr = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(exist(arr, 10));
     }
 }
