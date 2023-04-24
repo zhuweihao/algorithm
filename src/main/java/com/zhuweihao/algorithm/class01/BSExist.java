@@ -25,7 +25,7 @@ public class BSExist {
             mid = (left + right) / 2
             mid = left + (right -left) / 2
             mid = left + ((right - left)>>1)
-            除以二就相当于向右移位1，乘以2相当于向左移位1，加以相当于 | 1
+            除以二就相当于N>>1，乘以2相当于N<<1，乘以2加1相当于  (N<<1)|1
              */
             mid = left + ((right - left) >> 1);
             if (sortedArr[mid] == num) {
