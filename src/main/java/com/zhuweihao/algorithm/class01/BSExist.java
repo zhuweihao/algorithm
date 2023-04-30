@@ -8,6 +8,7 @@ package com.zhuweihao.algorithm.class01;
 public class BSExist {
     /**
      * 二分法判定有序数组sortedArr中是否存在num
+     * 时间复杂度：O(logN)
      *
      * @param sortedArr
      * @param num

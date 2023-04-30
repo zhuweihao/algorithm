@@ -24,6 +24,7 @@ public class InsertSort {
         // 0~1 , 0~2 , 0~3 , ... , 0~n-1
         for (int i = 1; i < arr.length; i++) {
             //错误示范：这种方式增加了很多次数据交换过程
+            //上面说错了，下面注释掉的代码效果是一样的
 //            for (int j = i; j > 0; j--) {
 //                if (arr[j] < arr[j - 1]) {
 //                    swap(arr, j, j - 1);

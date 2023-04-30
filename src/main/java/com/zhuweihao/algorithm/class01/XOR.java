@@ -88,7 +88,7 @@ public class XOR {
         swap(arr, 0, 0);
         IntUtil.printArray(arr);
         int a = 1;
-        int b = 1;
+        int b = 2;
         swap(a, b);
         System.out.println(a);
         System.out.println(b);
