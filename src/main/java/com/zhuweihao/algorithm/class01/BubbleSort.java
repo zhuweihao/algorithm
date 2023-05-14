@@ -12,7 +12,7 @@ import static com.zhuweihao.algorithm.utils.IntUtil.*;
 public class BubbleSort {
     /**
      * 冒泡排序：
-     * 在未排序区间内，从头开始两两比较，如果后面的值大（小）于前面的值则进行交换
+     * 在未排序区间内，从头开始两两比较，如果后面的值小于前面的值则进行交换
      * 时间复杂度：O(n^2)，最好最坏平均都为O(n^2)
      * 空间复杂度：O(1)
      * 稳定

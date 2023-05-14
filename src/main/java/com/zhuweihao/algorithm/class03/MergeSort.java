@@ -26,6 +26,7 @@ public class MergeSort {
     /*
     T(N) = 2*T(N/2) + O(N)
     时间复杂度：O(N*logN)
+    空间复杂度：O(N)
      */
     public static void process(int[] arr, int left, int right) {
         if (left == right) {
