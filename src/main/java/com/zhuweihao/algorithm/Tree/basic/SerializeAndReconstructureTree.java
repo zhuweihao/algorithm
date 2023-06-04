@@ -1,4 +1,4 @@
-package com.zhuweihao.algorithm.class07;
+package com.zhuweihao.algorithm.Tree.basic;
 
 import java.util.LinkedList;
 import java.util.Queue;
