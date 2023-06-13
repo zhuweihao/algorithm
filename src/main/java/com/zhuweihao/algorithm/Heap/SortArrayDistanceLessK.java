@@ -1,4 +1,4 @@
-package com.zhuweihao.algorithm.class04;
+package com.zhuweihao.algorithm.Heap;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

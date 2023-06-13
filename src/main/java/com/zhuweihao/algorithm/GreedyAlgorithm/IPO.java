@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
  * M表示你初始的资金
  * 说明：每做完一个项目，马上获得的收益，可以支持你去做下一个项目，不能并行的做项目。
  * 输出：最后获得的最大钱数
- *
+ * <p>
  * 测试链接
  *
  * @Author zhuweihao
