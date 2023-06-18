@@ -1,14 +1,16 @@
-package com.zhuweihao.algorithm.utils;
+package com.zhuweihao.algorithm.Graph;
 
 import java.io.*;
-import java.util.*;
+import java.util.Arrays;
 
 /**
+ * https://www.nowcoder.com/questionTerminal/c23eab7bb39748b6b224a8a3afbe396b?
+ *
  * @Author zhuweihao
- * @Date 2023/6/12 15:52
- * @Description com.zhuweihao.algorithm.utils
+ * @Date 2023/6/14 15:02
+ * @Description com.zhuweihao.algorithm.Graph
  */
-public class test {
+public class KruskalNew {
     public static int MAXN = 10001;
     public static int MAXM = 100001;
     public static int[] parent = new int[MAXN];
@@ -42,12 +44,12 @@ public class test {
         int f1 = find(i);
         int f2 = find(j);
         if (f1 != f2) {
-            int s1=size[f1];
-            int s2=size[f2];
-            int big=s1>s2?f1:f2;
-            int small=big==f1?f2:f1;
-            parent[small]=big;
-            size[big]+=size[small];
+            int s1 = size[f1];
+            int s2 = size[f2];
+            int big = s1 > s2 ? f1 : f2;
+            int small = big == f1 ? f2 : f1;
+            parent[small] = big;
+            size[big] += size[small];
             return true;
         }
         return false;

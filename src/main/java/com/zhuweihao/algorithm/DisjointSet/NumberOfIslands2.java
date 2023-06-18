@@ -8,7 +8,7 @@ import java.util.List;
  * @Date 2023/6/13 11:54
  * @Description com.zhuweihao.algorithm.DisjointSet
  */
-public class NumberOfIslands2 {
+public class  NumberOfIslands2 {
     static class Solution {
         public static List<Integer> numIslands2(int m, int n, int[][] positions) {
             Union union=new Union(m,n);
