@@ -83,25 +83,27 @@ public class XOR {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3, 2, 1};
-        //如果进行异或运算的两个数的内存地址相同，则不能保持原有值，出错
-        swap(arr, 0, 0);
-        IntUtil.printArray(arr);
-        int a = 1;
-        int b = 2;
-        swap(a, b);
-        System.out.println(a);
-        System.out.println(b);
-
-        //找到数组中出现奇数次的元素
-        int[] arr1 = new int[]{1, 2, 3, 2, 1};
-        System.out.println(findOdd(arr1));
-
-        //找到int数据中最右侧的1的位置
-        System.out.println(findRightOne(8));
-
-        //找到数组中两个出现奇数次的元素
-        findTwoOdd(new int[]{1, 2, 3, 3, 4, 4});
+//        int[] arr = new int[]{1, 2, 3, 2, 1};
+//        //如果进行异或运算的两个数的内存地址相同，则不能保持原有值，出错
+//        swap(arr, 0, 0);
+//        IntUtil.printArray(arr);
+//        int a = 1;
+//        int b = 2;
+//        swap(a, b);
+//        System.out.println(a);
+//        System.out.println(b);
+//
+//        //找到数组中出现奇数次的元素
+//        int[] arr1 = new int[]{1, 2, 3, 2, 1};
+//        System.out.println(findOdd(arr1));
+//
+//        //找到int数据中最右侧的1的位置
+//        System.out.println(findRightOne(8));
+//
+//        //找到数组中两个出现奇数次的元素
+//        findTwoOdd(new int[]{1, 2, 3, 3, 4, 4});
+        int num=3;
+        System.out.println(bit1counts(6));
 
     }
 }
